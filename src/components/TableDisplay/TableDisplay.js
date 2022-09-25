@@ -1,7 +1,7 @@
 import Table from '../Table/Table';
 import './TableDisplay.css';
 
-const TableDisplay = () => {
+const TableDisplay = ({ products }) => {
   return (
     <div className='table-display'>
       <div className='table-header'>
@@ -20,7 +20,7 @@ const TableDisplay = () => {
             </div>
         </div>
       </div>
-      <Table />
+      <Table products={products}/>
     </div>
   )
 }

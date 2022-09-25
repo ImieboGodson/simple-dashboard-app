@@ -45,7 +45,7 @@ const Form = () => {
                 <input onChange={onNameChange} className="" type="text" name="name" placeholder='Name' value={name}/>
             </div>
             <div className="form-item">
-                <textarea onChange={onDescriptionChange} name="description" placeholder='Product Description' value={description}></textarea>
+                <textarea onChange={onDescriptionChange} name="description" placeholder='Product description' value={description}></textarea>
             </div>
         </div>
         <button type='submit'>Submit</button>

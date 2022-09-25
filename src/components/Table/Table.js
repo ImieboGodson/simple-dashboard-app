@@ -1,7 +1,7 @@
 import Row from '../Row/Row';
 import './Table.css'
 
-const Table = () => {
+const Table = ({ products }) => {
   return (
     <table className='table'>
       <thead>
@@ -13,10 +13,11 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        <Row />
-        <Row />
-        <Row />
-        <Row />
+        {
+          products.map(prod => {
+            return <Row key={prod.id} product={prod} />
+          })
+        }
       </tbody>
     </table>
   )
