@@ -1,0 +1,39 @@
+.table {
+    margin-top: 10px;
+    /* margin-left: 10px; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table > thead {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.578);
+}
+
+table > tbody {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.500);
+}
+
+
+td, th {
+    /* border: 1px solid #fff; */
+    text-align: left;
+    padding: 15px;
+    border: none;
+}
+
+td:first-child, th:first-child {
+    padding-left: 50px;
+}
+
+td:last-child, th:last-child {
+    padding-right: 30px;
+}
+
+tbody > tr {
+    border-radius: 1rem;
+    cursor: pointer;
+}

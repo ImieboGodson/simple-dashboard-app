@@ -1,0 +1,64 @@
+.table-display {
+    /* padding: 20px 25px; */
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.table-header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.table-header-select {
+   width: 200px;
+   padding: 10px 15px;
+   margin-right: 8px;
+}
+
+.table-header-bar {
+    margin-right: 8px;
+    width: 13px;
+    height: 30px;
+    background: #000;
+    border-radius: .31rem;
+}
+
+.table-title-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.table-filter {
+    position: relative;
+    overflow: hidden;
+    /* padding: 5px 10px; */
+    border: .5px solid rgba(141, 140, 140, 0.31);
+    border-radius: .65rem;
+}
+
+.table-filter > select {
+    outline: none;
+    border: none;
+    width: 135px;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(141, 140, 140, 0.692);
+}
+
+
+select > option {
+    width: 600px !important;
+    padding: 10px ;
+    background: #fff;
+    border: none;
+}

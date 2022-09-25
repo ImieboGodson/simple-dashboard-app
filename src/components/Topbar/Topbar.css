@@ -1,0 +1,21 @@
+.topbar {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.topbar-large-text {
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.topbar-smaller-text {
+    margin-top: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(141, 140, 140);
+}
