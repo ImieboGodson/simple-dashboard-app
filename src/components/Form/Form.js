@@ -1,10 +1,25 @@
 import { useState } from 'react'
+import { connect } from 'react-redux'
+import { addProduct, getProducts } from '../../common/actions/productActions'
 import './Form.css'
 
-const Form = () => {
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addAProduct: (productData) => dispatch(addProduct(productData)),
+        refreshProducts: () => dispatch(getProducts())
+    }
+}
 
-  const [name, setName] = useState()
-    const [description, setDescription] = useState()
+const mapStateToProps = (state) => {
+    return {
+        product: state.addNewProduct.product
+    }
+}
+
+const Form = ({ addAProduct, product, refreshProducts }) => {
+
+  const [name, setName] = useState('')
+    const [description, setDescription] = useState('')
 
 
     const onNameChange = (e) => {
@@ -18,22 +33,22 @@ const Form = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-        const userDetails = { name, description }
-        console.log(userDetails)
-        // addUser(userDetails)
+        const productDetails = { name, description }
+        console.log(productDetails)
+        if(!name || !description) {
+            console.log("You can't leave any field empty")
+        } else {
+            addAProduct(productDetails)
 
-        setName('')
-        setDescription('')
-
-        // if (user) {
-        //     setName('')
-        //     setEmail('')
-        //     setPassword('')
-            
-        //     setTimeout(() => {
-        //         refetchUsers()
-        //     }, 5000);
-        // }
+            if (product) {
+                setName('')
+                setDescription('')
+                
+                setTimeout(() => {
+                    refreshProducts()
+                }, 5000);
+            }
+        }
 
     }
 
@@ -53,4 +68,4 @@ const Form = () => {
   )
 }
 
-export default Form;
+export default connect(mapStateToProps, mapDispatchToProps)(Form);

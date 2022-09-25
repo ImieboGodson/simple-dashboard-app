@@ -27,3 +27,23 @@ export const getAllProducts = (state=initialProductsState, action={}) => {
             return state;
     }
 }
+
+const initialProductState = {
+    product: {},
+    isPending: false,
+    error: false,
+    errorMessage: ''
+}
+
+export const addNewProduct = (state=initialProductState, action={}) => {
+    switch(action.type) {
+        case ADD_PRODUCT_PENDING:
+            return Object.assign({}, state, { isPending: true, error: false, errorMessage: '' });
+        case ADD_PRODUCT_SUCCESS:
+            return Object.assign({}, state, { product: action.payload, isPending: false, error: false, errorMessage: '' });
+        case ADD_PRODUCT_FAILED:
+            return Object.assign({}, state, { isPending: false, error: true, errorMessage: action.payload });
+        default:
+            return state;
+    }
+}
