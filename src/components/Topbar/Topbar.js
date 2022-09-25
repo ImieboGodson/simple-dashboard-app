@@ -7,9 +7,7 @@ const Topbar = () => {
         <p className='topbar-large-text'>Welcome, Josiah &#128075;</p>
         <p className='topbar-smaller-text'>Another day to do something special, right?.</p>
       </div>
-      <div>
-        RIGHT ITEMS GOES HERE.
-      </div>
+      <div className='topbar-right-items'></div>
     </div>
   )
 }
