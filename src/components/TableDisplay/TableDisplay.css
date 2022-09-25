@@ -2,10 +2,11 @@
     /* padding: 20px 25px; */
     background: #fff;
     border-radius: .5rem;
+    /* padding: 10px 0; */
 }
 
 .table-header {
-    padding: 20px 25px;
+    /* padding: 20px 25px; */
     padding: 30px 25px 10px 25px;
     display: flex;
     justify-content: space-between;
@@ -49,7 +50,7 @@
 .table-filter > select {
     outline: none;
     border: none;
-    width: 135px;
+    width: 126px;
     padding: 10px;
     font-size: 0.8rem;
     font-weight: 500;

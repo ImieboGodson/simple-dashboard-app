@@ -49,6 +49,7 @@ form:focus-within {
 .form-item > textarea {
     min-width: 100%;
     max-width: 100%;
+    min-height: 100px;
     padding: 10px 5px;
 }
 

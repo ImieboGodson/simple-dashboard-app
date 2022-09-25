@@ -5,7 +5,7 @@ const Topbar = () => {
     <div className='topbar'>
       <div className='topbar-left-items'>
         <p className='topbar-large-text'>Welcome, Josiah &#128075;</p>
-        <p className='topbar-smaller-text'>Here's what's happening in your Cake account today.</p>
+        <p className='topbar-smaller-text'>Another day to do something special, right?.</p>
       </div>
       <div>
         RIGHT ITEMS GOES HERE.

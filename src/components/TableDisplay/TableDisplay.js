@@ -10,12 +10,12 @@ const TableDisplay = ({ products }) => {
           <p className='table-title-text'>Products</p>
         </div>
         <div className='table-header-right' >
-            <div className='table-filter' style={{width:'144px'}}>
-              <select name="filter" id="filter">
-                <option value="All Transactions">All Transactions</option>
-                <option value="24 Hours">24 Hours</option>
-                <option value="Week">Week</option>
-                <option value="Month">Month</option>
+            <div className='table-filter' style={{width:'135px'}}>
+              <select disabled name="filter" id="filter">
+                <option value="All Products">All Products</option>
+                <option value="Today">Today</option>
+                <option value="This Week">This Week</option>
+                <option value="This Month">This Month</option>
               </select>
             </div>
         </div>
