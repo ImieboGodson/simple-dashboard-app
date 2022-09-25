@@ -1,5 +1,5 @@
 .table {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* margin-left: 10px; */
     width: 100%;
     border-collapse: collapse;
@@ -26,7 +26,7 @@ td, th {
 }
 
 td:first-child, th:first-child {
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 td:last-child, th:last-child {

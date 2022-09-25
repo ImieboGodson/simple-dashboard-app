@@ -10,12 +10,15 @@
 }
 
 .left-section {
-  flex: 2;
+  flex: 2.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #000;
 }
 
 .right-section {
-  flex: 8;
+  flex: 7.3;
   background: rgb(245, 246, 242);
 }
 

@@ -1,0 +1,80 @@
+form {
+    width: 88%;
+    padding: 30px 35px;
+    text-align: center;
+    background-color: #fff;
+    transition: 300ms ease-in-out;
+}
+
+/* form:hover,
+form:focus-within {
+    box-shadow: 5px 6px 0px 1px rgba(255, 255, 255, 0.2);
+} */
+
+.form-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-wrapper {
+    margin-top: 20px;
+}
+
+.form-item {
+    margin: 5px 0;
+}
+
+.form-item > label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.form-item > input,
+.form-item > textarea {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: none;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    background: rgb(255, 255, 255);
+}
+
+.form-item > input {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+}
+
+.form-item > textarea {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px 5px;
+}
+
+.form-item > input:focus,
+.form-item > textarea:focus {
+    background: rgb(245, 246, 242);
+    border: 0.5px solid #000;
+}
+
+.form-item > input::placeholder,
+.form-item > textarea::placeholder {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+form > button {
+    margin-top: 30px;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.866);
+    border: none;
+    /* border: 0.5px solid #cdcdcd7d; */
+    cursor: pointer;
+}
+
+form > button:hover {
+    background: #000;
+}
