@@ -79,3 +79,18 @@ form > button {
 form > button:hover {
     background: #000;
 }
+
+
+/* MEDIAQUERIES */
+
+@media (max-width: 1180px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 640px) {
+    form {
+        width: 85%;
+    }
+}

@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-const Form = ({ addAProduct, product, refreshProducts }) => {
+const Form = ({ addAProduct, product, refreshProducts, onAddNewProduct }) => {
 
   const [name, setName] = useState('')
     const [description, setDescription] = useState('')
@@ -43,6 +43,8 @@ const Form = ({ addAProduct, product, refreshProducts }) => {
             if (product) {
                 setName('')
                 setDescription('')
+
+                onAddNewProduct()
                 
                 setTimeout(() => {
                     refreshProducts()

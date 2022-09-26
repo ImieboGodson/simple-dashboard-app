@@ -4,13 +4,19 @@
 
 .app {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   background: rgb(239, 242, 243);
+  overflow-x: hidden;
 }
 
 .left-section {
-  flex: 2.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  /* flex: 2.7; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +24,9 @@
 }
 
 .right-section {
-  flex: 7.3;
+  /* flex: 7.3; */
+  margin-left: auto;
+  width: 70%;
   background: rgb(245, 246, 242);
 }
 
@@ -27,3 +35,50 @@
   /* height: 100%; */
   padding: 30px 25px;
 }
+
+
+/* MEDIAQUERIES */
+
+@media (max-width: 1180px) {
+    .left-section {
+      /* display: none; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: #fff;
+    }
+
+    .close-icon {
+      font-size: 1.8rem;
+    }
+
+    .left-section.noDisplay,
+    .close-btn.noDisplay {
+      display: none;
+    }
+
+    .right-section {
+      width: 100%;
+    }
+}
+
+
+/* @media (max-width: 800px) {
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+} */
