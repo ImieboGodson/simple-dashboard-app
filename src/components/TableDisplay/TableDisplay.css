@@ -1,8 +1,6 @@
 .table-display {
-    /* padding: 20px 25px; */
     background: #fff;
     border-radius: .5rem;
-    /* padding: 10px 0; */
 }
 
 .table-header {
@@ -17,12 +15,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.table-header-select {
-   width: 200px;
-   padding: 10px 15px;
-   margin-right: 8px;
 }
 
 .table-header-bar {
@@ -40,6 +32,7 @@
 
 
 .table-filter {
+    width: 135px;
     position: relative;
     overflow: hidden;
     /* padding: 5px 10px; */
@@ -63,4 +56,34 @@ select > option {
     padding: 10px ;
     background: #fff;
     border: none;
+}
+
+
+/* MEDIAQUERIES */
+
+@media (max-width: 640px) {
+    .table-header {
+        padding: 20px 15px 10px 15px;
+    }
+
+    .table-header-bar {
+        margin-right: 6px;
+        width: 6px;
+        height: 20px;
+    }
+    
+    .table-title-text {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .table-filter {
+        width: 90px;
+    }
+    
+    .table-filter > select {
+        width: 84px;
+        padding: 7px;
+        font-size: 0.5rem;
+    }
 }

@@ -49,6 +49,10 @@
 }
 
 @media (max-width: 640px) {
+    .topbar {
+        padding: 30px 15px;
+    }
+
     .topbar-large-text {
         font-size: 1rem;
         font-weight: 700;
