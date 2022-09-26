@@ -10,7 +10,7 @@ const TableDisplay = ({ products }) => {
           <p className='table-title-text'>Products</p>
         </div>
         <div className='table-header-right' >
-            <div className='table-filter' style={{width:'135px'}}>
+            <div className='table-filter'>
               <select disabled name="filter" id="filter">
                 <option value="All Products">All Products</option>
                 <option value="Today">Today</option>
