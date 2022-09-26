@@ -22,7 +22,7 @@ const mapStateToProps = (state) => {
 
 function App({ fetchProducts, products, errorMessage }) {
 
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
 
   useEffect(() => {
     fetchProducts()
