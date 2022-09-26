@@ -59,7 +59,7 @@ const Form = ({ addAProduct, product, refreshProducts, onAddNewProduct }) => {
         <p className='form-title'>ADD PRODUCT</p>
         <div className='form-wrapper'>
             <div className='form-item'>
-                <input onChange={onNameChange} className="" type="text" name="name" placeholder='Name' value={name}/>
+                <input onChange={onNameChange} className="" type="text" name="name" placeholder='Product name' value={name}/>
             </div>
             <div className="form-item">
                 <textarea onChange={onDescriptionChange} name="description" placeholder='Product description' value={description}></textarea>
